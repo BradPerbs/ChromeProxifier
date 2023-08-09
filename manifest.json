@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "SwagProxy",
+  "version": "1.0",
+  "description": "A simple proxy extension",
+  "permissions": ["proxy", "storage", "tabs"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  }
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Simple Proxy</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 10px;
+      background-color: #f4f4f4;
+    }
+    select {
+      padding: 8px;
+      margin: 5px 0;
+      width: 100%;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+      font-size: 16px;
+    }
+    #status {
+      color: grey;
+      margin: 10px 0;
+      font-size: 14px;
+    }
+    button {
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+      background-color: #4CAF50;
+      color: white;
+      width: 100%;
+      font-size: 16px;
+    }
+    button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <select id="location">
+    <option value="us">US</option>
+    <option value="uk">UK</option>
+    <!-- Add other locations here -->
+  </select>
+  <button id="toggleConnection">Connect</button>
+  <div id="status">Disconnected</div>
+  <script src="popup.js"></script>
+</body>
+</html>
